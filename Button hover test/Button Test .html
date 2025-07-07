@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button in HTML</title>
+    <style>
+
+        .box:hover{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: Myanimation;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+
+
+
+        .hello{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: ugabuga;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+    @keyframes Myanimation {
+        from{
+            background-color: red;
+        }
+
+        to{
+            transform: translateX(1000px);
+            background-color: blue;
+        }
+    }
+
+    @keyframes ugabuga {
+        from{
+            transform: translateY(0px);
+            background-color: blue;
+        }
+
+        to{
+            transform: translateY(400px);
+            background-color: red;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- You have to give the button a class ! -->
+
+    <div class="container"
+    style="width: 1000px; height: 500px; background-color: black; color: white;">
+
+
+
+    <h1>press the green box or hover your mouse on it .</h1>
+        <button type="button" class="box" style="background-color: cadetblue; width: 150px;
+        height: 100px;">
+        </button>
+
+        <button type="button" class="hello" style="background-color: cadetblue; width: 150px;
+                height: 100px; margin-right: 0px;">
+        </button>
+    </div>
+    
+</body>
+</html>
