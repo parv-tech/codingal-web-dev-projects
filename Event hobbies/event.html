@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+    <style>
+        body{
+            background-image: url("https://blenderartists.org/uploads/default/original/4X/f/8/1/f8111174602cd0503151e3cacac9ba84393b4540.gif");
+            color: honeydew;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p id="hobby">...</p>
+    <div class="box">
+        <button onclick="hobby1()" style="color: white; background-color:black; margin: 10px;">Look at hobby 1 .</button>
+        <button onclick="hobby2()" style="color: white; background-color: black; margin: 10px;">Look at hobby 2 . </button>
+        <button onclick="hobby3()" style="color: white; background-color: black; margin: 10px;">Look at hobby 3 . </button>
+    </div>
+    <script>
+        function hobby1(){
+            document.getElementById("hobby").innerHTML= "my first hobby is playing games . By that you could say both video games and normal games . "
+        }
+
+        function hobby2(){
+            document.getElementById("hobby").innerHTML= "My second hobby is reading books and art . "
+        }
+        function hobby3() {
+            document.getElementById("hobby").innerHTML ="My third hobby is sports especially dodgeball . "
+        }
+        
+    </script>
+</body>
+</html>
