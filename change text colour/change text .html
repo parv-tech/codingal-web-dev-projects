@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1 id="text">Test</h1>
+    <button onclick="change()">Press me to change the colour of test . </button>
+    <button onclick="changeback()">Press me to change colour back to white . </button>
+    <script>
+        function change(){
+            document.getElementById("text").style.color = ("cyan") ; 
+        }
+        function changeback(){
+            document.getElementById("text").style.color = ("white")
+        }
+    </script>
+</body>
+</html>
